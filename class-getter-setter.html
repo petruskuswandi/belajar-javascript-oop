@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Class : Getter Setter</title>
-</head>
-<body>
-<script>
-    class Person {
+  </head>
+  <body>
+    <script>
+      class Person {
         constructor(firstName, lastName) {
-            this.firstName = firstName;
-            this.lastName = lastName;
+          this.firstName = firstName;
+          this.lastName = lastName;
         }
 
-        get fullName(){
-            return `${this.firstName} ${this.lastName}`;
+        get fullName() {
+          return `${this.firstName} ${this.lastName}`;
         }
 
         set fullName(value) {
-            const result = value.split(" ");
-            this.firstName = result[0];
-            this.lastName = result[1];
+          const result = value.split(" ");
+          this.firstName = result[0];
+          this.lastName = result[1];
         }
-    }
+      }
 
-    const petrus = new Person("Petrus", "Kuswandi");
-    console.info(petrus);
-    console.info(petrus.fullName);
+      const petrus = new Person("Petrus", "Kuswandi");
+      console.info(petrus);
+      console.info(petrus.fullName);
 
-    petrus.fullName = "Budi Nugraha";
-    console.info(petrus);
-</script>
-</body>
+      petrus.fullName = "Budi Nugraha";
+      console.info(petrus);
+    </script>
+  </body>
 </html>
